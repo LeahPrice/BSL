@@ -1,7 +1,7 @@
 Package: BSL
 Type: Package
 Title: Bayesian Synthetic Likelihood
-Version: 3.2.1
+Version: 3.2.2
 Date: 2021-09-30
 Authors@R: c(person("Ziwen","An",role=c("aut","cre"),email="ziwen.an@hdr.qut.edu.au",comment = c(ORCID = "0000-0002-9947-5182")),
             person("Leah F.","South",role=c("aut"),email="leah.south@hdr.qut.edu.au",comment = c(ORCID = "0000-0002-5646-2963")),
@@ -28,8 +28,9 @@ Depends: R (>= 3.3.0)
 License: GPL (>= 2)
 LazyLoad: yes
 Imports: glasso, ggplot2, MASS, mvtnorm, copula, whitening, graphics,
-        gridExtra, foreach, coda, Rcpp, doRNG, methods, stringr, Rdpack (>= 0.7)
-Suggests: elliplot, doParallel, rbenchmark, mixtools, DBI
+        gridExtra, foreach, coda, Rcpp, doRNG, methods, stringr, Rdpack (>= 0.7),
+		DBI
+Suggests: elliplot, doParallel, rbenchmark, mixtools
 LinkingTo: RcppArmadillo, Rcpp
 LazyData: true
 RoxygenNote: 7.1.1

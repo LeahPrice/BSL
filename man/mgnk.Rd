@@ -30,12 +30,12 @@ the results from the multivariate G & K \insertCite{Drovandi2011}{BSL} example f
 \details{
 It is not practical to give a reasonable explanation of this example through R documentation
 given the number of equations involved. We refer the reader to the BSLasso paper \insertCite{An2019}{BSL}
-at \url{https://doi.org/10.1080/10618600.2018.1537928} for information on the model and summary statistic used in this example.
+at <doi:10.1080/10618600.2018.1537928> for information on the model and summary statistic used in this example.
 }
 \section{An example dataset}{
 
 
-We use the foreign currency exchange data available from \url{http://www.rba.gov.au/statistics/historical-data.html}
+We use the foreign currency exchange data available from \url{https://www.rba.gov.au/statistics/historical-data.html}
 as in \insertCite{An2019;textual}{BSL}.
 
 \itemize{
