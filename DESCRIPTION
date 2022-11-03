@@ -1,8 +1,8 @@
 Package: BSL
 Type: Package
 Title: Bayesian Synthetic Likelihood
-Version: 3.2.3
-Date: 2022-01-27
+Version: 3.2.5
+Date: 2022-11-02
 Authors@R: c(person("Ziwen","An",role=c("aut"),email="ziwen.an@hdr.qut.edu.au",comment = c(ORCID = "0000-0002-9947-5182")),
             person("Leah F.","South",role=c("aut","cre"),email="l1.south@qut.edu.au",comment = c(ORCID = "0000-0002-5646-2963")),
             person("Christopher C.","Drovandi",role=c("aut"),email="c.drovandi@qut.edu.au",comment = c(ORCID = "0000-0001-9222-8763")))
@@ -29,22 +29,39 @@ Depends: R (>= 3.3.0)
 License: GPL (>= 2)
 LazyLoad: yes
 Imports: glasso, ggplot2, MASS, mvtnorm, copula, whitening, graphics,
-        gridExtra, foreach, coda, Rcpp, doRNG, methods, stringr, Rdpack (>= 0.7),
-		DBI
+        gridExtra, foreach, coda, Rcpp, doRNG, methods, stringr, Rdpack (>= 0.7)
 Suggests: elliplot, doParallel, rbenchmark, mixtools
 LinkingTo: RcppArmadillo, Rcpp
 LazyData: true
 RoxygenNote: 7.1.1
 Encoding: UTF-8
-Collate: 'BSL-package.R' 'RcppExports.R' 's4-MODEL.R' 's4-BSL.R'
-        'bsl.R' 'cell.R' 'combinePlotsBSL.R' 'covWarton.R'
-        'estimateLoglike.R' 'estimateWhiteningMatrix.R'
-        'gaussianRankCorr.R' 'gaussianSynLike.R'
-        'gaussianSynLikeGhuryeOlkin.R' 'imports.R' 'kernelCDF.R'
-        'logitTransform.R' 'ma2.R' 'mgnk.R' 'myMiniProgressBar.R'
-        's4-PENALTY.R' 'selectPenalty.R' 'semiparaKernelEstimate.R'
-        'sliceGammaMean.R' 'sliceGammaVariance.R' 'synLikeMisspec.R'
-        'toad.R'
+Collate: 
+    'BSL-package.R'
+    'RcppExports.R'
+    's4-MODEL.R'
+    's4-BSL.R'
+    'bsl.R'
+    'cell.R'
+    'combinePlotsBSL.R'
+    'covWarton.R'
+    'estimateLoglike.R'
+    'estimateWhiteningMatrix.R'
+    'gaussianRankCorr.R'
+    'gaussianSynLike.R'
+    'gaussianSynLikeGhuryeOlkin.R'
+    'imports.R'
+    'kernelCDF.R'
+    'logitTransform.R'
+    'ma2.R'
+    'mgnk.R'
+    'myMiniProgressBar.R'
+    's4-PENALTY.R'
+    'selectPenalty.R'
+    'semiparaKernelEstimate.R'
+    'sliceGammaMean.R'
+    'sliceGammaVariance.R'
+    'synLikeMisspec.R'
+    'toad.R'
 RdMacros: Rdpack
 NeedsCompilation: yes
 Packaged: 2020-11-22 04:28:37 UTC; southl

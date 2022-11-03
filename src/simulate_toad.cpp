@@ -74,8 +74,8 @@ double prod(NumericVector x) {
 //' The simulation function for the toad example
 //'
 //' @description The simulation function for the toad example.
-//' @param params A vector of proposed model parameters, \ifelse{html}{\out{<i>&#945</i>}}{\eqn{\alpha}},
-//'   \ifelse{html}{\out{<i>&#947</i>}}{\eqn{gamma}} and \ifelse{html}{\out{p<sub>0</sub>}}{\eqn{p_0}}.
+//' @param params A vector of proposed model parameters, \eqn{\alpha},
+//'   \eqn{gamma} and \eqn{p_0}.
 //' @param ntoad The number of toads to simulate in the observation.
 //' @param nday The number of days lasted of the observation.
 //' @param model Which model to be used. 1 for the random return model, 2 for the nearest return model,
@@ -152,7 +152,7 @@ vector<double> obsMat2deltaxCpp(Rcpp::NumericMatrix X, unsigned int lag) {
         for (i=0; i<ndays-lag; i++) {
             x0 = X(i,j);
             x1 = X(i+lag,j);
-            if (NumericVector::is_na(x0) | NumericVector::is_na(x1)) continue;
+            if (NumericVector::is_na(x0) || NumericVector::is_na(x1)) continue;
             temp = x1 - x0;
             x.push_back(abs(temp));
         }
@@ -179,7 +179,7 @@ NumericVector obsMat2deltax(Rcpp::NumericMatrix X, unsigned int lag) {
         for (i=0; i<ndays-lag; i++) {
             x0 = X(i,j);
             x1 = X(i+lag,j);
-            if (NumericVector::is_na(x0) | NumericVector::is_na(x1)) continue;
+            if (NumericVector::is_na(x0) || NumericVector::is_na(x1)) continue;
             temp = x1 - x0;
             x.push_back(abs(temp));
         }
