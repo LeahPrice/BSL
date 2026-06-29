@@ -66,14 +66,14 @@ The example includes the three different returning models of
 }
 \section{Functions}{
 \itemize{
-\item \code{toad_sim}: Simulates data from the model, using C++ in the backend.
+\item \code{toad_sim()}: Simulates data from the model, using C++ in the backend.
 
-\item \code{toad_sum}: Computes the summary statistics for this example. The summary 
+\item \code{toad_sum()}: Computes the summary statistics for this example. The summary 
 statistics are the log differences between adjacent quantiles and also the median.
 
-\item \code{toad_prior}: Evaluates the log prior at the chosen parameters.
-}}
+\item \code{toad_prior()}: Evaluates the log prior at the chosen parameters.
 
+}}
 \section{datasets (simulated and real)}{
 
 

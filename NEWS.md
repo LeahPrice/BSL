@@ -1,3 +1,14 @@
+# BSL 3.2.6 (Release date: 2026-06)
+
+* Corrected outdated references
+* Improved the way suggested packages are called in examples
+
+# BSL 3.2.2-3.2.5
+
+* Updated maintainer
+* Added a reference to the JSS paper
+* Made various changes requested by CRAN
+
 # BSL 3.2.1 (Release date: 2021-04)
 
 * Added DBI to suggests.

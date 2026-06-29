@@ -82,18 +82,18 @@ Cell motility (movement) and proliferation (reproduction) cause
 }
 \section{Functions}{
 \itemize{
-\item \code{cell_sim}: The function \code{cell_sim(theta, Yinit, rows, cols,
+\item \code{cell_sim()}: The function \code{cell_sim(theta, Yinit, rows, cols,
 sim_iters, num_obs)} simulates data from the model, using C++ in the
 backend.
 
-\item \code{cell_sum}: The function \code{cell_sum(Y,sum_options)} calculates the
+\item \code{cell_sum()}: The function \code{cell_sum(Y,sum_options)} calculates the
 summary statistics for this example.
 
-\item \code{cell_prior}: The function \code{cell_prior(theta)} evaluates the log
+\item \code{cell_prior()}: The function \code{cell_prior(theta)} evaluates the log
 prior density at the parameter value
 \eqn{\theta}.
-}}
 
+}}
 \section{A simulated dataset}{
 
 

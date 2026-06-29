@@ -60,12 +60,12 @@ This example is based on estimating the parameters of a basic MA(2)
 }
 \section{Functions}{
 \itemize{
-\item \code{ma2_sim}: Simulates an MA(2) time series.
+\item \code{ma2_sim()}: Simulates an MA(2) time series.
 
-\item \code{ma2_sim_vec}: Simulates n MA(2) time series with a vectorised simulation
+\item \code{ma2_sim_vec()}: Simulates n MA(2) time series with a vectorised simulation
 function.
 
-\item \code{ma2_sum}: Returns the summary statistics for a given data set. The
+\item \code{ma2_sum()}: Returns the summary statistics for a given data set. The
 skewness and kurtosis of the summary statistics can be controlled via the
 \eqn{\epsilon} and
 \eqn{\delta} parameters. This is the
@@ -73,11 +73,11 @@ sinh-arcsinnh transformation of \insertCite{Jones2009;textual}{BSL}. By default,
 the summary statistics function simply returns the raw data. Otherwise, the
 transformation is introduced to motivate the ``semiBSL'' method.
 
-\item \code{ma2_prior}: Evaluates the (unnormalised) log prior, which is uniform
+\item \code{ma2_prior()}: Evaluates the (unnormalised) log prior, which is uniform
 subject to several restrictions related to invertibility of the time
 series.
-}}
 
+}}
 \section{A simulated dataset}{
 
 
